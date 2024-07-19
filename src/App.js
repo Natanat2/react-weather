@@ -6,7 +6,10 @@ function App() {
     <>
     <div className="App">
       <header className="App-header">
-          Сервис просмотра информации о погоде
+        <table>
+          <thead>Сервис просмотра информации о погоде</thead>
+        </table>
+          
       </header>
     </div>
     </>
