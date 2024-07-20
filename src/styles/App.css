@@ -1,7 +1,28 @@
-table.App {
+.container {
   width: 80%;
   margin: auto;
   text-align: center;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+.button-group {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+button-group .btn-group {
+  display: flex;
+  justify-content: center;
+}
+
+table.App {
+  width: 100%;
   background-color: #ffffff;
   border-collapse: collapse;
   font-size: calc(10px + 2vmin);
