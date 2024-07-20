@@ -1,13 +1,18 @@
-.App {
+table.App {
+  width: 80%;
+  margin: auto;
   text-align: center;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table.App th, table.App td {
+  border: 1px solid #ddd; 
+  padding: 8px;
+}
+
+table.App th {
+  background-color: #f2f2f2;
 }
