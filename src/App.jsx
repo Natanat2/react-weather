@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CitySelector from './components/CityCelector';
 import WeatherTable from './components/WeatherTable';
 import ViewSelector from './components/ViewSelector';
+import Spinner from 'react-bootstrap/Spinner';
 
 const apiKey = '58f0d2bee1a55111ef067d91e6e2dcab';
 const cities = {
@@ -44,7 +45,13 @@ function App() {
   }, [selectedCity]);
 
   if(!loaded) {
-    return <div>Loading...</div>;
+    return (
+      <>
+        <div className='loading'>
+          Загружаем...<Spinner animation="border" variant="info" />
+        </div>;
+      </>
+    );
   }
 
   if(error) {
